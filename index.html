@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <br>
+        <h1>Sign Up</h1>
+        <form action="" method="POST">
+            <section id="image">
+                <label for="image">Choose image: </label>
+                <input type="file" id="image" name="image" placeholder="Choose image">
+            </section>
+            <br><br>
+            <section id="personalInfo">
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+                <br> <br>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                <br><br>
+                <label for="tel">Phone number: </label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number">
+                <br><br>
+                <label for="state">State: </label>
+                <input list="states" name="state" placeholder="Enter your state">
+                <datalist id="states">
+                    <option value="Sonora"></option>
+                </datalist>
+                <br><br>
+                <label for="township">Township: </label>
+                <input list="townships" name="township" placeholder="Enter your township">
+                <datalist id="townships">
+                    <option value="Cajeme"></option>
+                    <option value="Cananea"></option>
+                    <option value="Nogales"></option>
+                    <option value="Navojoa"></option>
+                    <option value="Yécora"></option>
+                </datalist>
+            </section>
+            <br><br>
+            <aside>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <br><br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <br><br>
+                <label for="experience">Experience: </label>
+                <input list="lvl" name="experience" placeholder="Enter your experience level">
+                <datalist id="lvl">
+                    <option value="Novice"></option>
+                    <option value="Semi-novice"></option>
+                    <option value="Intermediate"></option>
+                    <option value="Regular"></option>
+                    <option value="Expert"></option>
+                </datalist>
+                <br><br><br>
+                <input id="submit" type="submit" name="submit">
+            </aside>
+        </form>
+    </section>
+</body>
+
+</html>
